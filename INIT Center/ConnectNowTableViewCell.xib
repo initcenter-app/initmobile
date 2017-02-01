@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectNowTableViewCell" id="KGk-i7-Jjw" customClass="ConnectNowTableViewCell" customModule="INIT_Center" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="xyE-KK-wtF">
+                        <rect key="frame" x="2" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="02D-Fz-Otg"/>
+                            <constraint firstAttribute="width" constant="40" id="j0S-2E-Mln"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are looking for a career in IT, then you are at the right place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uds-n9-Z9M">
+                        <rect key="frame" x="48" y="0.0" width="182" height="59"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-k0-aOA">
+                        <rect key="frame" x="238" y="8" width="71" height="38"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="EA9-Z0-U0v"/>
+                            <constraint firstAttribute="width" constant="71" id="Sjh-c4-UPg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <state key="normal" title="CONNECT NOW">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.9425700306892395" green="0.38911977410316467" blue="0.2971336841583252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="1VH-k0-aOA" firstAttribute="leading" secondItem="Uds-n9-Z9M" secondAttribute="trailing" constant="8" id="11v-Ey-p7p"/>
+                    <constraint firstItem="xyE-KK-wtF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9W5-uP-NZ8"/>
+                    <constraint firstAttribute="bottom" secondItem="Uds-n9-Z9M" secondAttribute="bottom" id="Hhm-ng-BGV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1VH-k0-aOA" secondAttribute="trailing" constant="3" id="LYK-jY-OCf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1VH-k0-aOA" secondAttribute="trailing" constant="3" id="MJ8-gF-Jry"/>
+                    <constraint firstItem="Uds-n9-Z9M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y6I-9k-9lZ"/>
+                    <constraint firstItem="Uds-n9-Z9M" firstAttribute="leading" secondItem="xyE-KK-wtF" secondAttribute="trailing" constant="6" id="aRb-Iv-M5a"/>
+                    <constraint firstItem="1VH-k0-aOA" firstAttribute="top" secondItem="xyE-KK-wtF" secondAttribute="top" id="dLg-V9-GPR"/>
+                    <constraint firstItem="xyE-KK-wtF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="ff2-5F-7VB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="connectNowBtn" destination="1VH-k0-aOA" id="q6H-xq-QrJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="light" width="74" height="102"/>
+    </resources>
+</document>
